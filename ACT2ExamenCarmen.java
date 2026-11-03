@@ -12,7 +12,8 @@ public class ACT2ExamenCarmen {
 		System.out.println("2. Área círculo.");
 		System.out.println("3. Área del cono.");
 		System.out.println("4. Área del cilindro.");
-		System.out.println("5. Salir");
+		System.out.println("5. Volumen esfera.");
+		System.out.println("6. Salir");
 		System.out.println("=============================");
 		System.out.print("Elige una opción: ");
 		int opc = sc.nextInt();
@@ -57,6 +58,23 @@ public class ACT2ExamenCarmen {
 
             System.out.println("El área del cilindro es: " + (2 * 3.1416 * rc * (rc + h)));
         }
+		
+		else if (opc == 5) {
+			System.out.print("Radio: ");
+            double re = sc.nextDouble();
+            double volumen = (4 / 3) * 3.1416 * Math.pow(re, 3);
+
+            System.out.println("El volumen de la esfera es: " + volumen);
+
+		} 
+		else if (opc == 6) {
+            System.out.println("Hasta pronto!");
+            
+
+		} else {
+            System.out.println("Introduce una opcón válida (1-6)");
+
+		}
 		
 		sc.close();
 	}
