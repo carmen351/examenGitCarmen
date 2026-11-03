@@ -48,6 +48,15 @@ public class ACT2ExamenCarmen {
             System.out.println("El área del cono es: " + (3.1416 * r * (r + g)));
             
         }
+		else if (opc == 4) {
+			System.out.print("Radio: ");
+            double rc = sc.nextDouble();
+
+            System.out.print("Altura: ");
+            double h = sc.nextDouble();
+
+            System.out.println("El área del cilindro es: " + (2 * 3.1416 * rc * (rc + h)));
+        }
 		
 		sc.close();
 	}
