@@ -38,6 +38,16 @@ public class ACT2ExamenCarmen {
 			
 			
 		}
+		else if (opc == 3) {
+			System.out.print("Radio: ");
+            double r = sc.nextDouble();
+
+            System.out.print("Generatriz: ");
+            double g = sc.nextDouble();
+
+            System.out.println("El área del cono es: " + (3.1416 * r * (r + g)));
+            
+        }
 		
 		sc.close();
 	}
