@@ -30,6 +30,15 @@ public class ACT2ExamenCarmen {
             
 
 			}
+		else if (opc == 2) {
+			System.out.print("Radio: ");
+			int radio = sc.nextInt();
+			double areaCirculo = 3.1416 * radio*radio;
+			System.out.print("El área del círculo es: "+ areaCirculo);
+			
+			
+		}
+		
 		sc.close();
 	}
 }
